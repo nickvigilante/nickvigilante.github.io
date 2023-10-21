@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from '../styles/Terminal.module.css';
 import '../styles/globals.css';
+import * as commands from '../app/commands.js';
 
 export default function Home() {
   const [history, setHistory] = useState([]);
@@ -13,32 +14,12 @@ export default function Home() {
 
     let commandArr = command.toLowerCase().split(" ");
 
-    if (command === 'foo') {
-      output = 'bar';
-    } else if (command === 'clear') {
+    if (command === 'clear') {
       setHistory([]);
-      setCommand('');
-      return;
-    } else if (command === 'nick') {
-      output = `Usage: nick command [options]
-       nick help command [options]
-Commands:
-
-  github   - Go to Nick's GitHub profile
-  linkedin - Go to Nick's LinkedIn profile
-`;
-    } else if (command === 'nick github') {
-      output = 'whatever';
-      setHistory([...history, { input: command, output }]);
-      window.location.href = 'https://www.github.com/nickvigilante';
-      return;
-    } else if (command === '') {
-      // do nothing
     } else {
-      output = `nicksh: command not found: ${command}`
+      output = commands.handleCommand(command);
+      setHistory([...history, { input: command, output }]);
     }
-
-    setHistory([...history, { input: command, output }]);
     setCommand('');
   };
 
@@ -53,7 +34,7 @@ Commands:
   return (
     <div className={styles.terminal}>
       <div className={styles.header}>
-        Nick Vigilante
+        {commands.resume.basics.name}
       </div>
       <div className={styles.commandBody}>
         {history.map((item, idx) => (

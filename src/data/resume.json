@@ -1,0 +1,268 @@
+{
+    "basics": {
+        "name": "Nick Vigilante",
+        "label": "Software Engineer/Technical Writer",
+        "image": "",
+        "url": "https://nickvigilante.com",
+        "summary": "I like to write docs and code stuff. I have a proven track record of improving docs systems and automating processes. I'm always looking for new opportunities in technical writing and software engineering.",
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "nickvigilante",
+                "url": "https://github.com/nickvigilante"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "n-i-c-k-v",
+                "url": "https://linkedin.com/in/n-i-c-k-v/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Cockroach Labs",
+            "position": "Software Engineer/Documentation Infrastructure Architect",
+            "url": "https://www.cockroachlabs.com",
+            "startDate": "2022-08",
+            "endDate": "2023-10-11",
+            "summary": "Maintained and enhanced the infrastructure surrounding CRL's product documentation",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "Cockroach Labs",
+            "position": "Software Engineer/Documentation Infrastructure Architect",
+            "url": "https://www.cockroachlabs.com",
+            "startDate": "2021-11-29",
+            "endDate": "2022-08",
+            "summary": "Description",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "TCT, Inc",
+            "position": "Senior SQL Developer",
+            "url": "https://www.tctis.com",
+            "startDate": "2019-02-19",
+            "endDate": "2021-10-27",
+            "summary": "Description",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "AFAK Solutions, LLC",
+            "position": "Software Engineer/Documentation Infrastructure Architect",
+            "url": "https://www.cockroachlabs.com",
+            "startDate": "2013-01-01",
+            "endDate": "2014-01-01",
+            "summary": "Description",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "Appian Corporation",
+            "position": "Senior Solution Engineer",
+            "url": "https://www.appian.com",
+            "startDate": "2015-08-02",
+            "endDate": "2018-06-15",
+            "summary": "Description",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "MicroStrategy, Inc",
+            "position": "Product Support Manager",
+            "url": "https://www.microstrategy.com",
+            "startDate": "2014-10-01",
+            "endDate": "2015-07-28",
+            "summary": "Description",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "MicroStrategy, Inc",
+            "position": "Technical Support Engineer",
+            "url": "https://www.microstrategy.com",
+            "startDate": "2013-06",
+            "endDate": "2014-09-30",
+            "summary": "Description",
+            "highlights": [
+                "Started the company"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Cockroach Labs",
+            "position": "Co-Chair of Roacher Pride",
+            "url": "https://www.cockroachlabs.com/",
+            "startDate": "2022-08-01",
+            "endDate": "2023-10-11",
+            "summary": "Description",
+            "highlights": [
+                "Awarded 'Volunteer of the Month'"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Rensselaer Polytechnic Institute",
+            "url": "https://rpi.edu/",
+            "area": "Mathematics of Operations Research",
+            "studyType": "Bachelor of Science",
+            "startDate": "2011-08",
+            "endDate": "2013-05",
+            "score": "3.74",
+            "courses": [
+                "Advanced Calculus",
+                "Art and Science of Mathematics I",
+                "Computational Optimization",
+                "Computer Science I",
+                "Foundations of Analysis",
+                "General Psychology",
+                "Human Factors in Design",
+                "Human Sexuality",
+                "Introduction to Complex Variables",
+                "Introduction to Differential Equations",
+                "Industrial and Organizational Psychology",
+                "Linear Algebra",
+                "Math Mentorship",
+                "Mathematical Models of Operations Research",
+                "Multivariable Calculus and Matrix Algebra",
+                "Physics I",
+                "Probability Theory and Applications",
+                "Social Psychology"
+            ]
+        },
+        {
+            "institution": "Raritan Valley Community College",
+            "url": "https://rpi.edu/",
+            "area": "General Sciences",
+            "studyType": "Associate of Science",
+            "startDate": "2007-09",
+            "endDate": "2011-05",
+            "courses": [
+                "Anatomy and Physiology I",
+                "Anatomy and Physiology II",
+                "Biology I",
+                "Biology II",
+                "Calculus I",
+                "Calculus II",
+                "Chemistry I",
+                "Chemistry II",
+                "Computer Literacy",
+                "English I",
+                "English II",
+                "Human Origins",
+                "Introduction to Cultural Anthropology",
+                "Physics I",
+                "Physics II",
+                "Pre-Calculus I",
+                "Pre-Calculus II",
+                "Summations, Sequences, and Series"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Technical Writing",
+            "level": "Proficient",
+            "keywords": [
+                "HTML",
+                "Markdown",
+                "Jekyll",
+                "Liquid"
+            ]
+        },
+        {
+            "name": "Software Development",
+            "level": "Proficient",
+            "keywords": [
+                "Go",
+                "Python",
+                "Ruby",
+                "Open-source development",
+                "SQL",
+                "GraphQL",
+                "Regular Expressions",
+                "Rust"
+            ]
+        },
+        {
+            "name": "Information Architecture",
+            "level": "Intermediate",
+            "keywords": [
+                "Procedural documentation",
+                "Troubleshooting documentation"
+            ]
+        },
+        {
+            "name": "GitHub",
+            "level": "Proficient",
+            "keywords": [
+                "GitHub GraphQL API",
+                "REST API",
+                "GitHub Actions",
+                "GitHub Pages",
+                "Git"
+            ]
+        },
+        {
+            "name": "Jira",
+            "level": "Intermediate",
+            "keywords": [
+                "Jira REST API",
+                "Jira administration"
+            ]
+        },
+        {
+            "name": "Web Development",
+            "level": "Intermediate",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Next.js"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native proficiency"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Limited working proficiency"
+        },
+        {
+            "language": "Italian",
+            "fluency": "Elementary proficiency"
+        }
+    ],
+    "interests": [
+        {
+            "name": "PC building"
+        },
+        {
+            "name": "Home automation"
+        },
+        {
+            "name": "Cooking"
+        },
+        {
+            "name": "Traveling"
+        },
+        {
+            "name": "Open-source software"
+        }
+    ]
+}
