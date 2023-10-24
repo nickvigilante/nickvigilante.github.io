@@ -23,7 +23,8 @@ const fieldDescriptions = {
 export const handleCommand = function (command) {
     let commandArr = command.toLowerCase().split(" ");
     let commandArrLen = commandArr.length;
-    if (command === '') {
+    let output = '';
+    if (command === output) {
         return '';
     } else if (validCommands.includes(commandArr[0])) {
         console.log(profileNames);
@@ -36,9 +37,29 @@ export const handleCommand = function (command) {
                 case "basics":
                     return basics;
                 case "work":
-                    return "this is work";
+                    let verbose = false;
+                    if (commandArrLen == 3) { 
+                        if (commandArr[2] === "-v" || commandArr[2] === "--verbose")
+                        {
+                            verbose = true;
+                        } else {
+                            output = `${commandName}: unknown flag ${commandArr[2]}`
+                        }
+                    }
+                    output = work(verbose);
+                    return output;
                 case "volunteer":
-                    return volunteer();
+                    verbose = false;
+                    if (commandArrLen == 3) { 
+                        if (commandArr[2] === "-v" || commandArr[2] === "--verbose")
+                        {
+                            verbose = true;
+                        } else {
+                            output = `${commandName}: unknown flag ${commandArr[2]}`
+                        }
+                    }
+                    output = volunteer(verbose);
+                    return output;
                 case "education":
                     return "this is work";
                 case "skills":
@@ -57,9 +78,9 @@ export const handleCommand = function (command) {
                             case "volunteer":
                                 return volunteer();
                             case "education":
-                                return "this is work";
+                                return `Usage: ${commandName} education`;
                             case "skills":
-                                return "this is basics";
+                                return `Usage: ${commandName} skills []`;
                             case "languages":
                                 return languages();
                             case "interests":
@@ -73,7 +94,7 @@ export const handleCommand = function (command) {
                         return helpMain();
                     }
                 default:
-                    let output = `${commandName}: invalid command: ${commandArr[1]}\n`;
+                    output = `${commandName}: invalid command: ${commandArr[1]}\n`;
                     output += helpMain();
                     return output;
             }
@@ -108,9 +129,9 @@ Available commands:
     return output;
 };
 
-const basics = `${resume.basics.name}, ${resume.basics.title}\n\n${resume.basics.summary}`
+const basics = `${resume.basics.name}, ${resume.basics.label}\n\n${resume.basics.summary}`
 
-const languages = function () {
+function languages() {
     let output = `Spoken languages:\n\n`;
     for (let language of resume["languages"]) {
         output += `- ${language.language} (${language.proficiency})\n`;
@@ -118,10 +139,72 @@ const languages = function () {
     return output;
 }
 
-const volunteer = function () {
-    let output = `Volunteer work:\n\n`;
-    for (let language of resume["languages"]) {
-        output += `- ${language.language} (${language.proficiency})\n`;
+const work = function(verbose = false) {
+    let w_hist = resume["work"]
+    let output;
+    if (w_hist.length > 0) {
+        output = `Work experience:\n\n`;
+        if (verbose === true) {
+            output += `---\n\n`;
+            for (let w of w_hist) {
+                output += `${w.position}, ${w.name}\n`;
+                output += `Summary: ${w.summary}\n`
+                output += `URL: ${w.url}\n`
+                output += `Start Date: ${w.startDate}\n`
+                output += `End Date: ${w.endDate}\n`
+                output += `Highlights:\n\n`
+                for (let h of w.highlights) {
+                    output += `- ${h}\n`
+                }
+                output += `\n---\n\n`
+            }
+        } else {
+            for (let w of w_hist) {
+                output += `- ${w.position}, ${w.name} (${getMonthAndYear(w.startDate)} - ${getMonthAndYear(w.endDate)})\n`;
+            }
+            output += `\nTip: Try adding -v or --verbose at the end to list highlights and detailed dates.\n`
+        }
+    } else {
+        output = "No volunteer work found!"
     }
     return output;
+}
+
+const volunteer = function(verbose = false) {
+    let v_hist = resume["volunteer"]
+    let output;
+    if (v_hist.length > 0) {
+        output = `Volunteer work:\n\n`;
+        if (verbose === true) {
+            output += `---\n\n`;
+            for (let v of v_hist) {
+                output += `${v.position}, ${v.organization}\n`;
+                output += `Summary: ${v.summary}\n`
+                output += `URL: ${v.url}\n`
+                output += `Start Date: ${v.startDate}\n`
+                output += `End Date: ${v.endDate}\n`
+                output += `Highlights:\n\n`
+                for (let h of v.highlights) {
+                    output += `- ${h}\n`
+                }
+                output += `\n---\n\n`
+            }
+        } else {
+            for (let v of v_hist) {
+                output += `- ${v.position}, ${v.organization} (${getMonthAndYear(v.startDate)} - ${getMonthAndYear(v.endDate)})\n`;
+            }
+            output += `\nTip: Try adding -v or --verbose at the end to list highlights and detailed dates.\n`
+        }
+    } else {
+        output = "No volunteer work found!"
+    }
+    return output;
+}
+
+function getMonthAndYear(dateString) {
+    const date = new Date(dateString);
+    const monthName = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(date);
+    const year = date.getFullYear();
+
+    return `${monthName} ${year}`;
 }

@@ -100,13 +100,15 @@
     "volunteer": [
         {
             "organization": "Cockroach Labs",
-            "position": "Co-Chair of Roacher Pride",
-            "url": "https://www.cockroachlabs.com/",
+            "position": "Co-Chair, Roacher Pride",
+            "url": "https://www.cockroachlabs.com/blog/roacherpride-how-we-celebrate-pride-year-round-at-cockroach-labs/",
             "startDate": "2022-08-01",
             "endDate": "2023-10-11",
-            "summary": "Description",
+            "summary": "Co-chair of the LGBTQIA+ employee resource group at Cockroach Labs dedicated to helping friends and loved ones of LGBTQIA+ individuals as well as LGBTQIA+ employees",
             "highlights": [
-                "Awarded 'Volunteer of the Month'"
+                "Hosted virtual and in-person company-wide happy hours",
+                "Co-hosted a volunteer event to pack snack packs; donated said snack packs to the Ali Forney Center in NYC to benefit LGBTQIA+ youth experiencing food insecurity",
+                "Oversaw a committee of volunteers who contributed blog posts, created company swag, and led various events for the company"
             ]
         }
     ],
