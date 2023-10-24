@@ -1,4 +1,6 @@
 .terminal {
+    display: flex;      /* Set up flexbox */
+    flex-direction: column; /* Stack children vertically */
     width: 100vw;
     height: 100vh;
     background-color: #000;
@@ -7,8 +9,8 @@
     font-size: 20px;
     padding: 20px;
     margin: 0;
-    overflow-y: auto;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensure padding doesn't increase size */
+    overflow: hidden;       /* Prevent scrolling in terminal */
 }
 
 .header {
@@ -22,22 +24,36 @@
 .commandBody {
     padding-top: 20px;
     white-space: pre-wrap;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 .prompt {
     color: #bf00ff;
     font-weight: bold;
+    margin-right: 5px;
 }
 
 .input {
+    flex-grow: 1; /* Let it take the available space */
+    width: 100%; /* Explicitly set to 100% width */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
     background: none;
     color: lavenderblush;
     border: none;
     outline: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    box-sizing: border-box; /* Box sizing is crucial here */
 }
 
 .input:focus {
     outline: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
