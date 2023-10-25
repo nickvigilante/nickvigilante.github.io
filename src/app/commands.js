@@ -15,7 +15,7 @@ const profileNames = profiles.map(profile => profile.network).reduce((acc, str) 
     return acc
 }, {});
 
-const validCommands = [commandName, 'help', 'welcome', 'clear', 'hello', 'hi'];
+const validCommands = [commandName, 'help', 'welcome', 'clear', 'hello', 'hi', 'man'];
 
 const fieldDescriptions = {
     "basics": "Basic information about me",
@@ -39,6 +39,8 @@ export const handleCommand = function (command) {
             return helpMain();
         } else if (command === "hello" || command === "hi") {
             return "Hi there!"
+        } else if (commandArrLen >= 2 && commandArr[0] === 'man' && commandArr[1] === commandName ) {
+            return openResume();
         } else if (commandArrLen >= 2 && Object.keys(profileNames).includes(commandArr[1])) {
             return openProfileUrl(commandArr[1])
         } else if (commandArrLen >= 2 && commandArr[0] === commandName) {
@@ -90,6 +92,8 @@ export const handleCommand = function (command) {
                     } else {
                         return helpMain();
                     }
+                case "resume":
+                    return openResume();
                 default:
                     output = `${commandName}: invalid command: ${commandArr[1]}\n`;
                     output += helpMain();
@@ -109,6 +113,11 @@ const openProfileUrl = function (network) {
         window.open(profile.url, '_blank');
     }
     return `Going to ${profile.network}...`
+}
+
+const openResume = function () {
+    window.location.href = './resume';
+    return `Opening resume...`
 }
 
 const helpMain = function () {
@@ -300,13 +309,13 @@ welcome
       Show this message
 `
 
-function getMonthAndYear(dateString) {
+export function getMonthAndYear(dateString) {
     const isYearMonthFormat = /^\d{4}-\d{2}$/.test(dateString);
     if (isYearMonthFormat) {
         dateString += '-01';
     }
     const date = new Date(dateString);
-    const monthName = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(date);
+    const monthName = new Intl.DateTimeFormat('en-US', { month: 'long', timeZone: 'UTC' }).format(date);
     const year = date.getFullYear();
 
     return `${monthName} ${year}`;
