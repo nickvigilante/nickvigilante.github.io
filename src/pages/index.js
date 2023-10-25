@@ -8,11 +8,13 @@ export default function Home() {
   const [command, setCommand] = useState('');
   const [historyIndex, setHistoryIndex] = useState(null);
   const [isHistoryTraversal, setIsHistoryTraversal] = useState(false);
+  const [welcomeMessage, setWelcomeMessage] = useState(commands.welcome);
 
   const handleCommand = (e, skipOutput = false) => {
     e.preventDefault();
 
     if (command === 'clear') {
+      setWelcomeMessage('');
       setHistory([]);
     } else {
       let output = '';
@@ -97,6 +99,7 @@ export default function Home() {
         {commands.resume.basics.name}
       </div>
       <div className={styles.commandBody} ref={terminalBodyRef}>
+        {welcomeMessage && <div>{welcomeMessage}</div>}
         {history.map((item, idx) => (
           <div key={idx}>
             <div>

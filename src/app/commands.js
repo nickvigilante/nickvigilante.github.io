@@ -1,14 +1,21 @@
 import res from '../data/resume.json';
 
+function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 export const resume = res;
 
 export const commandName = resume.basics.name.split(" ")[0].toLowerCase();
 
-const profiles = res.basics.profiles;
+const profiles = resume.basics.profiles;
 
-const profileNames = profiles.map(profile => profile.network.toLowerCase());
+const profileNames = profiles.map(profile => profile.network).reduce((acc, str) => {
+    acc[str.toLowerCase()] = str;
+    return acc
+}, {});
 
-const validCommands = [commandName, 'pwd', 'ls', 'clear', 'man'];
+const validCommands = [commandName, 'help', 'welcome', 'clear', 'hello', 'hi'];
 
 const fieldDescriptions = {
     "basics": "Basic information about me",
@@ -24,63 +31,53 @@ export const handleCommand = function (command) {
     let commandArr = command.toLowerCase().split(" ");
     let commandArrLen = commandArr.length;
     let output = '';
+    let verbose = false;
     if (command === output) {
         return '';
     } else if (validCommands.includes(commandArr[0])) {
-        console.log(profileNames);
-        if (command === commandName) {
+        if (command === commandName || command === 'help') {
             return helpMain();
-        } else if (commandArrLen >= 2 && profileNames.includes(commandArr[1])) {
+        } else if (command === "hello" || command === "hi") {
+            return "Hi there!"
+        } else if (commandArrLen >= 2 && Object.keys(profileNames).includes(commandArr[1])) {
             return openProfileUrl(commandArr[1])
         } else if (commandArrLen >= 2 && commandArr[0] === commandName) {
+            if (commandArrLen == 3) { 
+                if (commandArr[2] === "-v" || commandArr[2] === "--verbose")
+                {
+                    verbose = true;
+                } else {
+                    output = `${commandName}: unknown flag ${commandArr[2]}`
+                }
+            }
             switch (commandArr[1]) {
                 case "basics":
                     return basics;
                 case "work":
-                    let verbose = false;
-                    if (commandArrLen == 3) { 
-                        if (commandArr[2] === "-v" || commandArr[2] === "--verbose")
-                        {
-                            verbose = true;
-                        } else {
-                            output = `${commandName}: unknown flag ${commandArr[2]}`
-                        }
-                    }
-                    output = work(verbose);
-                    return output;
+                    return work(verbose);
                 case "volunteer":
-                    verbose = false;
-                    if (commandArrLen == 3) { 
-                        if (commandArr[2] === "-v" || commandArr[2] === "--verbose")
-                        {
-                            verbose = true;
-                        } else {
-                            output = `${commandName}: unknown flag ${commandArr[2]}`
-                        }
-                    }
-                    output = volunteer(verbose);
-                    return output;
+                    return volunteer(verbose);
                 case "education":
-                    return "this is work";
+                    return education(verbose);
                 case "skills":
-                    return "this is basics";
+                    return skills(verbose);
                 case "languages":
                     return languages();
                 case "interests":
-                    return "this is basics";
+                    return interests(verbose);
                 case "help":
                     if (commandArrLen > 2) {
                         switch(commandArr[2]) {
                             case "basics":
                                 return `Usage: ${commandName} basics`;
                             case "work":
-                                return `Usage: ${commandName} work [options]`;
+                                return `Usage: ${commandName} work [-v|--verbose]`;
                             case "volunteer":
-                                return volunteer();
+                                return `Usage: ${commandName} volunteer [-v|--verbose]`;
                             case "education":
-                                return `Usage: ${commandName} education`;
+                                return `Usage: ${commandName} education [-v|--verbose]`;
                             case "skills":
-                                return `Usage: ${commandName} skills []`;
+                                return `Usage: ${commandName} skills [-v|--verbose]`;
                             case "languages":
                                 return languages();
                             case "interests":
@@ -98,13 +95,15 @@ export const handleCommand = function (command) {
                     output += helpMain();
                     return output;
             }
+        } else if (command === 'welcome') {
+            return welcome;
         }
     } else {
         return `fakesh: command not found: ${commandArr[0]}`
     }
 }
 
-export const openProfileUrl = function (network) {
+const openProfileUrl = function (network) {
     const profile = profiles.find(p => p.network.toLowerCase() === network);
     if (profile !== undefined) {
         window.open(profile.url, '_blank');
@@ -112,7 +111,7 @@ export const openProfileUrl = function (network) {
     return `Going to ${profile.network}...`
 }
 
-export const helpMain = function () {
+const helpMain = function () {
     let output = `Usage: ${commandName} command [options]
        ${commandName} help command [options]
 
@@ -120,10 +119,10 @@ Available commands:
 
 `;
     for (let key in resume) {
-        output += `- ${key}\n`;
+        output += `- ${key}: ${fieldDescriptions[key]}\n`;
     }
     for (let profile of resume["basics"]["profiles"]) {
-        output += `- ${profile.network.toLowerCase()}\n`;
+        output += `- ${profile.network.toLowerCase()}: Open my ${profileNames[profile.network.toLowerCase()]} profile\n`;
     }
 
     return output;
@@ -131,7 +130,7 @@ Available commands:
 
 const basics = `${resume.basics.name}, ${resume.basics.label}\n\n${resume.basics.summary}`
 
-function languages() {
+const languages = function() {
     let output = `Spoken languages:\n\n`;
     for (let language of resume["languages"]) {
         output += `- ${language.language} (${language.proficiency})\n`;
@@ -201,7 +200,111 @@ const volunteer = function(verbose = false) {
     return output;
 }
 
+const education = function(verbose = false) {
+    let e_hist = resume["education"]
+    let output;
+    if (e_hist.length > 0) {
+        output = `Education:\n\n`;
+        if (verbose === true) {
+            output += `---\n\n`;
+            for (let e of e_hist) {
+                output += `${e.studyType}, ${e.area}, ${e.institution}\n`;
+                output += `GPA: ${e.score}\n`
+                output += `Start Date: ${e.startDate}\n`
+                output += `Graduation Date: ${e.endDate}\n`
+                output += `URL: ${e.url}\n`
+                output += `Classes:\n\n`
+                for (let c of e.courses) {
+                    output += `- ${c}\n`
+                }
+                output += `\n---\n\n`
+            }
+        } else {
+            for (let e of e_hist) {
+                output += `- ${e.studyType}, ${e.area}, ${e.institution} (${getMonthAndYear(e.startDate)} - ${getMonthAndYear(e.endDate)})\n`;
+            }
+            output += `\nTip: Try adding -v or --verbose at the end to list more detailed information.\n`
+        }
+    } else {
+        output = "No education found!"
+    }
+    return output;
+}
+
+const interests = function(verbose = false) {
+    let iArr = resume['interests'];
+    let output;
+    if (iArr.length > 0) {
+        output = `Interests:\n\n`;
+        if (verbose === true) {
+            for (let i of iArr) {
+                output += `- ${i.name}\n`;
+                if (i['keywords'] !== undefined) {
+                    for (let k of i.keywords) {
+                        output += `  - ${k}\n`
+                    }
+                }
+            }
+        } else {
+            for (let i of iArr) {
+                output += `- ${i.name}\n`;
+            }
+            output += `\nTip: Try adding -v or --verbose at the end to list more detailed information.\n`
+        }
+    } else {
+        output = "No interests found!"
+    }
+    return output;
+}
+
+const skills = function(verbose = false) {
+    let sArr = resume['skills'];
+    let output;
+    if (sArr.length > 0) {
+        output = `Skills:\n\n`;
+        if (verbose === true) {
+            for (let s of sArr) {
+                output += `- ${s.name} (${s.level})`;
+                if (s['keywords'] !== undefined) {
+                    output += `:\n`
+                    for (let k of s.keywords) {
+                        output += `  - ${k}\n`
+                    }
+                } else {
+                    output += `\n`;
+                }
+            }
+        } else {
+            for (let s of sArr) {
+                output += `- ${s.name} (${s.level})\n`;
+            }
+            output += `\nTip: Try adding -v or --verbose at the end to list more detailed information.\n`
+        }
+    } else {
+        output = "No skills found!"
+    }
+    return output;
+}
+
+export const welcome = `Welcome to my portfolio site! My name is ${resume.basics.name}.
+
+To get started, you can run some basic commands:
+
+${commandName} basics
+      Get high-level details about me
+
+${commandName} work -v
+      Get my work history
+
+welcome
+      Show this message
+`
+
 function getMonthAndYear(dateString) {
+    const isYearMonthFormat = /^\d{4}-\d{2}$/.test(dateString);
+    if (isYearMonthFormat) {
+        dateString += '-01';
+    }
     const date = new Date(dateString);
     const monthName = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(date);
     const year = date.getFullYear();
