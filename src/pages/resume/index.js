@@ -30,35 +30,41 @@ export default function Home() {
             <p className={styles.subtext}>{fullName} - {label}</p>
 
             <h2 className={styles.header}>SYNOPSIS</h2>
-            <p className={styles.subtext}><b>{commandName}</b> [OPTIONS] COMMAND [ARG...]</p>
+            <p className={styles.subtext}><b>{commandName}</b> COMMAND [ARG...]</p>
 
             <h2 className={styles.header}>DESCRIPTION</h2>
             <p className={styles.subtext}><b>{commandName}</b> is an advocate for open-source everything, good documentation, and making the world a better place.</p>
 
-            <h2 className={styles.header}>HISTORY</h2>
-            <p className={styles.subtext}><b>{commandName}</b> is an advocate for open-source everything, good documentation, and making the world a better place.</p>
+            <h2 className={styles.header}>COMMANDS</h2>
+            <p className={styles.subtext}><b>work</b></p>
+            <p className={styles.doublesubtext}>* Supports {formatArrayToString(resume.skills.find(s => s.name === "Software Development").keywords)}</p>
+            <p className={styles.triplesubtext}>--engineer</p>
 
-            <h2 className={styles.header}>OPTIONS</h2>
+            <p className={styles.subtext}><b>education</b></p>
+            <p className={styles.doublesubtext}>--engineer</p>
+            <p className={styles.triplesubtext}>--engineer</p>
+
+            <p className={styles.subtext}>volunteer</p>
+            <p className={styles.doublesubtext}>--engineer</p>
+            <p className={styles.triplesubtext}>--engineer</p>
+
+            <p className={styles.subtext}>skills</p>
+            <p className={styles.doublesubtext}>--engineer</p>
+            <p className={styles.triplesubtext}>--engineer</p>
+
             <p className={styles.subtext}>--engineer</p>
             <p className={styles.doublesubtext}>* Supports {formatArrayToString(resume.skills.find(s => s.name === "Software Development").keywords)}</p>
             <p className={styles.triplesubtext}>--engineer</p>
 
-            <p className={styles.subtext}>--writer</p>
-            <p className={styles.doublesubtext}>--engineer</p>
-            <p className={styles.triplesubtext}>--engineer</p>
+            <h2 className={styles.header}>OPTIONS</h2>
+            <p className={styles.subtext}><b>-v, --verbose</b></p>
+            <p className={styles.doublesubtext}>Display more details</p>
 
-            <p className={styles.subtext}>--student</p>
-            <p className={styles.doublesubtext}>--engineer</p>
-            <p className={styles.triplesubtext}>--engineer</p>
-
-            <p className={styles.subtext}>--teacher</p>
-            <p className={styles.doublesubtext}>--engineer</p>
-            <p className={styles.triplesubtext}>--engineer</p>
 
             <h2 className={styles.header}>FILES</h2>
             <p className={styles.subtext}>* Formal education</p>
             {resume.education.map((item, idx) => (
-                <p className={styles.doublesubtext}>- <a className={styles.link} href={item.url}>{item.institution}</a>: {item.studyType}, {item.area}</p>
+                <p key={idx} className={styles.doublesubtext}>- <a className={styles.link} href={item.url}>{item.institution}</a>: {item.studyType}, {item.area}</p>
             ))}
 
             <h2 className={styles.header}>AUTHOR</h2>
