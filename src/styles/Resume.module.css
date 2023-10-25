@@ -1,0 +1,56 @@
+.body {
+    font-family: monospace;
+    font-size: 11px;
+    color: #222222;
+    margin: 20px 10px 0px 20px;
+    text-align: left;
+}
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+.manheader_left {
+    font-family: monospace;
+    font-size: 12px;
+    margin: 10px 0px 0px 0px;
+    text-align: left;
+}
+.manheader_right {
+    font-family: monospace;
+    font-size: 12px;
+    margin: 10px 0px 0px 0px;
+    text-align: right;
+}
+.header {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 15px 0px 0px 0px;
+    line-height: .8em;
+}
+.subtext {
+    margin: 0px 0px 0px 50px;
+    width: 575px;
+}
+.doublesubtext {
+    margin: 0px 0px 0px 70px;
+    width: 525px;
+}
+.triplesubtext {
+    margin: 0px 0px 0px 90px;
+    width: 475px;
+}
+.bottomcut {
+    margin-bottom: 0px;
+}
+.link {
+    color: #222222;
+    text-decoration: underline;
+}
+.footer {
+    margin: 10px 0px 0px 0px;
+    color: #CCCCCC;
+}
+.table {
+    border-spacing: 2em 0em;
+    margin: 0px 90px;
+}
