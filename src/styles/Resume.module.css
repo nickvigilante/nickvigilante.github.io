@@ -4,6 +4,7 @@
     color: #222222;
     margin: 20px 10px 0px 20px;
     text-align: left;
+    max-width: 575px;
 }
 .headercontainer {
     display: flex;
@@ -53,4 +54,9 @@
 .table {
     border-spacing: 2em 0em;
     margin: 0px 90px;
+}
+.authorcontainer {
+    display: flex;
+    margin: 0px 0px 0px 50px;
+    width: 575px;
 }

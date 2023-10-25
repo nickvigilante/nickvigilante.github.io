@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import styles from '../styles/Terminal.module.css';
 import '../styles/globals.css';
 import * as commands from '../app/commands.js';
+import Head from 'next/head';
 
 export default function Home() {
   const [history, setHistory] = useState([]);
@@ -94,30 +95,35 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={styles.terminal}>
-      <div className={styles.header}>
-        {commands.resume.basics.name}
-      </div>
-      <div className={styles.commandBody} ref={terminalBodyRef}>
-        {welcomeMessage && <div>{welcomeMessage}</div>}
-        {history.map((item, idx) => (
-          <div key={idx}>
-            <div>
-              <span className={styles.prompt}>$</span> {item.input}
+    <div>
+      <Head>
+        <title>{commands.fullName}</title>
+      </Head>
+      <div className={styles.terminal}>
+        <div className={styles.header}>
+          {commands.fullName}
+        </div>
+        <div className={styles.commandBody} ref={terminalBodyRef}>
+          {welcomeMessage && <div>{welcomeMessage}</div>}
+          {history.map((item, idx) => (
+            <div key={idx}>
+              <div>
+                <span className={styles.prompt}>$</span> {item.input}
+              </div>
+              {item.output && <div>{item.output}</div>}
             </div>
-            {item.output && <div>{item.output}</div>}
+          ))}
+          <div className={styles.container}>
+            <span className={styles.prompt}>$ </span>
+            <input 
+              type="text" 
+              value={command} 
+              onChange={handleInputChange} 
+              className={styles.input}
+              ref={inputRef}
+              onKeyDown={handleKeyDown}
+            />
           </div>
-        ))}
-        <div className={styles.container}>
-          <span className={styles.prompt}>$ </span>
-          <input 
-            type="text" 
-            value={command} 
-            onChange={handleInputChange} 
-            className={styles.input}
-            ref={inputRef}
-            onKeyDown={handleKeyDown}
-          />
         </div>
       </div>
     </div>

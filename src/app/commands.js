@@ -6,7 +6,9 @@ function capitalizeFirstLetter(str) {
 
 export const resume = res;
 
-export const commandName = resume.basics.name.split(" ")[0].toLowerCase();
+export const fullName = resume.basics.name
+
+export const commandName = fullName.split(" ")[0].toLowerCase();
 
 const profiles = resume.basics.profiles;
 
@@ -137,7 +139,7 @@ Available commands:
     return output;
 };
 
-const basics = `${resume.basics.name}, ${resume.basics.label}\n\n${resume.basics.summary}`
+const basics = `${resume.basics.name} (${resume.basics.pronouns}), ${resume.basics.label}\n\n${resume.basics.summary}`
 
 const languages = function() {
     let output = `Spoken languages:\n\n`;
