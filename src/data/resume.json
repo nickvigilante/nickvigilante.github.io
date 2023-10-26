@@ -3,7 +3,7 @@
         "name": "Nick Vigilante",
         "label": "Software Engineer/Technical Writer",
         "image": "",
-        "email": "example@example.com",
+        "email": "nt@vigi.email",
         "url": "https://nickvigilante.com",
         "pronouns": "he/him/his",
         "summary": "I like to write docs and code stuff. I have a proven track record of improving docs systems and automating processes. I'm always looking for new opportunities in technical writing and software engineering.",
@@ -22,64 +22,34 @@
     },
     "work": [
         {
-            "name": "Cockroach Labs",
-            "position": "Software Engineer/Documentation Infrastructure Architect",
-            "url": "https://www.cockroachlabs.com",
-            "startDate": "2022-08",
-            "endDate": "2023-10-11",
-            "summary": "Maintained and enhanced the infrastructure surrounding CRL's product documentation",
+            "name": "MicroStrategy, Inc",
+            "position": "Technical Support Engineer",
+            "url": "https://www.microstrategy.com",
+            "startDate": "2013-06",
+            "endDate": "2014-09-30",
+            "summary": "Provider of enterprise-level phone and email support and supplier of knowledge base articles on the MicroStrategy platform",
             "highlights": [
-                "Improved UX and SEO of our documentation site by way of structured data modifications, link standardization, and various enhancements to testing and linting tools",
-                "Created and modify Go code responsible for process automation, data governance of our docs repo, and git commit message compliance",
-                "Reduced toil for managers triaging issues by automatically associating work items with Jira epics",
-                "Delivered frequent internal documentation updates and training seminars to the documentation team to help bolster existing skills and improve their productivity in their roles",
-                "Orchestrated enterprise software trials for various hosting platforms to improve site availability and reduce site build times by over 35%",
-                "Improved search experience to bring end users to their desired content quicker and more reliably through Algolia",
-                "Provided tooling assistance to writers to ensure a frictionless contribution experience",
-                "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation"
+                "Provide complex and challenging support for MicroStrategy's Business Intelligence product suite and its underlying technologies",
+                "Develop strong relationships with MicroStrategy customers and partners through daily interactions during customer project development and production system maintenance",
+                "Find creative and sophisticated solutions to problems reported while using MicroStrategy's product suite through analytical talent and strong troubleshooting abilities",
+                "Work in a strong team environment to provide unparalleled support to customers in a wide variety of industries",
+                "Prioritize and communicate product defects and enhancements to development teams",
+                "Contribute to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda"
             ]
         },
         {
-            "name": "Cockroach Labs",
-            "position": "Technical Writer",
-            "url": "https://www.cockroachlabs.com",
-            "startDate": "2021-11-29",
-            "endDate": "2022-08",
-            "summary": "Wrote documentation for CockroachDB",
+            "name": "MicroStrategy, Inc",
+            "position": "Product Support Manager",
+            "url": "https://www.microstrategy.com",
+            "startDate": "2014-10-01",
+            "endDate": "2015-07-28",
+            "summary": "Subject matter expert for technical support engineers and supplier of knowledge base articles on the MicroStrategy platform",
             "highlights": [
-                "Liaised with various engineering teams about new features and functionality to document about CockroachDB",
-                "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation",
-                "Created procedural documentation related to migrating data to CockroachDB",
-                "Submitted regular release notes to highlight product changes across releases",
-                "Enhanced internal tooling and documentation surrounding release note generation to reduce writer toil for generating release notes and improve user experience when reading release notes by combining releases for a single version onto a single page"
-            ]
-        },
-        {
-            "name": "TCT, Inc",
-            "position": "Senior SQL Developer",
-            "url": "https://www.tctis.com",
-            "startDate": "2019-02-19",
-            "endDate": "2021-10-27",
-            "summary": "Developed full-stack SQL-based compensation management applications in the beqom platform for clients in the financial services industry",
-            "highlights": [
-                "Create and modify stored procedures, functions, tables, views, and other database objects to support new business requirements, in addition to making various database customizations",
-                "Work closely with regulatory teams and project management to gather requirements and develop applications and test cases that match expected compensation values",
-                "Create best practices, documentation, and training for end users and other developers",
-                "Provide mentorship and training to new developers on various parts of the beqom platform",
-                "Liaise with vendor product and roadmap teams to communicate product improvements and issues/pain points from clients",
-                "Operate and develop in both Agile and DevOps methodologies"
-            ]
-        },
-        {
-            "name": "AFAK Solutions, LLC",
-            "position": "Independent Contractor",
-            "url": "https://www.cockroachlabs.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "A little bit of everything",
-            "highlights": [
-                "Provided hardware and software infrastructure support for and upgrades to existing systems",
-                "Performed content structural review and enhancements of existing slide decks and course material for professional development training"
+                "Contribute to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda",
+                "Worked as a product expert who can be depended on to solve the most difficult technical cases and defuse critical customer situations",
+                "Used well-developed technical and customer management skills, along with the ability to interact well with the QEs and software developers and involvement with internal Cloud infrastructure to provide support for MicroStrategy's customers",
+                "Specialized in database-related issues as well as mobile application-related issues",
+                "Provided training to members of the department to further enhance knowledge of other engineers"
             ]
         },
         {
@@ -88,7 +58,7 @@
             "url": "https://www.appian.com",
             "startDate": "2015-08-02",
             "endDate": "2018-06-15",
-            "summary": "Knowledge Base architect, subject matter expert, Appian development, cloud infrastructure support",
+            "summary": "Knowledge Base architect, subject matter expert, Appian developer, and cloud infrastructure support engineer",
             "highlights": [
                 "Analyzed customer log data to track trends in usage and identify problems within the platform",
                 "Created and maintained product knowledge base, contributing over 200 articles on product issues, how-to guides, best practices, and troubleshooting common issues",
@@ -101,33 +71,64 @@
             ]
         },
         {
-            "name": "MicroStrategy, Inc",
-            "position": "Product Support Manager",
-            "url": "https://www.microstrategy.com",
-            "startDate": "2014-10-01",
-            "endDate": "2015-07-28",
-            "summary": "Subject matter expert for technical support engineers",
+            "name": "AFAK Solutions, LLC",
+            "position": "Independent Contractor",
+            "url": "https://www.cockroachlabs.com",
+            "startDate": "2018-06-18",
+            "endDate": "2019-02-15",
+            "summary": "A little bit of everything",
             "highlights": [
-                "Worked as a product expert who can be depended on to solve the most difficult technical cases and defuse critical customer situations",
-                "Used well-developed technical and customer management skills, along with the ability to interact well with the QEs and software developers and involvement with internal Cloud infrastructure to provide support for MicroStrategy's customers",
-                "Specialized in database-related issues as well as mobile application-related issues",
-                "Provided training to members of the department to further enhance knowledge of other engineers"
+                "Provided hardware and software infrastructure support for and upgrades to existing systems",
+                "Performed content structural review and enhancements of existing slide decks and course material for professional development training"
             ]
         },
         {
-            "name": "MicroStrategy, Inc",
-            "position": "Technical Support Engineer",
-            "url": "https://www.microstrategy.com",
-            "startDate": "2013-06",
-            "endDate": "2014-09-30",
-            "summary": "",
+            "name": "TCT, Inc",
+            "position": "Senior SQL Developer",
+            "url": "https://www.tctis.com",
+            "startDate": "2019-02-19",
+            "endDate": "2021-10-27",
+            "summary": "Developed full-stack SQL-based compensation management applications in the beqom platform for clients in the financial services industry",
             "highlights": [
-                "Provide complex and challenging support for MicroStrategy's Business Intelligence product suite and its underlying technologies",
-                "Develop strong relationships with MicroStrategy customers and partners through daily interactions during customer project development and production system maintenance",
-                "Find creative and sophisticated solutions to problems reported while using MicroStrategy's product suite through analytical talent and strong troubleshooting abilities",
-                "Work in a strong team environment to provide unparalleled support to customers in a wide variety of industries",
-                "Prioritize and communicate product defects and enhancements to development teams",
-                "Contribute to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda"
+                "Create and modified stored procedures, functions, tables, views, and other database objects to support new business requirements, in addition to making various database customizations",
+                "Worked closely with regulatory teams and project management to gather requirements and develop applications and test cases that match expected compensation values",
+                "Created best practices, documentation, and training for end users and other developers",
+                "Provided mentorship and training to new developers on various parts of the beqom platform",
+                "Liaised with vendor product and roadmap teams to communicate product improvements and client issues/pain points",
+                "Operated and developed in both Agile and DevOps methodologies"
+            ]
+        },
+        {
+            "name": "Cockroach Labs",
+            "position": "Technical Writer",
+            "url": "https://www.cockroachlabs.com",
+            "startDate": "2021-11-29",
+            "endDate": "2022-08",
+            "summary": "Wrote documentation for CockroachDB",
+            "highlights": [
+                "Created procedural documentation related to migrating data to CockroachDB",
+                "Liaised with various engineering teams about new features and functionality to document about CockroachDB",
+                "Submitted regular release notes to highlight product changes across releases",
+                "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation",
+                "Enhanced internal tooling and documentation surrounding release note generation to reduce writer toil for generating release notes and improve user experience when reading release notes by combining releases for a single version onto a single page"
+            ]
+        },
+        {
+            "name": "Cockroach Labs",
+            "position": "Software Engineer/Documentation Infrastructure Architect",
+            "url": "https://www.cockroachlabs.com",
+            "startDate": "2022-08",
+            "endDate": "2023-10-11",
+            "summary": "Maintained and enhanced the infrastructure surrounding CRL's product documentation",
+            "highlights": [
+                "Improved UX and SEO of our documentation site by way of structured data modifications, link standardization, and various enhancements to testing and linting tools",
+                "Created and modify Go and Python code responsible for process automation, data governance of our docs repo, and git commit message compliance",
+                "Reduced toil for managers triaging issues by automatically associating work items with Jira epics",
+                "Delivered frequent internal documentation updates and training seminars to the documentation team to help bolster existing skills and improve their productivity",
+                "Orchestrated enterprise software trials for various hosting platforms to improve site availability and reduce site build times by over 35%",
+                "Improved search experience to bring end users to their desired content quicker and more reliably through Algolia",
+                "Provided tooling assistance to writers to ensure a frictionless contribution experience",
+                "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation"
             ]
         }
     ],
@@ -147,6 +148,34 @@
         }
     ],
     "education": [
+        {
+            "institution": "Raritan Valley Community College",
+            "url": "https://www.raritanval.edu/",
+            "area": "General Sciences",
+            "studyType": "Associate of Science",
+            "startDate": "2007-09",
+            "endDate": "2011-05",
+            "courses": [
+                "Anatomy and Physiology I",
+                "Anatomy and Physiology II",
+                "Biology I",
+                "Biology II",
+                "Calculus I",
+                "Calculus II",
+                "Chemistry I",
+                "Chemistry II",
+                "Computer Literacy",
+                "English I",
+                "English II",
+                "Human Origins",
+                "Introduction to Cultural Anthropology",
+                "Physics I",
+                "Physics II",
+                "Pre-Calculus I",
+                "Pre-Calculus II",
+                "Summations, Sequences, and Series"
+            ]
+        },
         {
             "institution": "Rensselaer Polytechnic Institute",
             "url": "https://rpi.edu/",
@@ -176,75 +205,69 @@
                 "Probability Theory and Applications",
                 "Social Psychology"
             ]
-        },
-        {
-            "institution": "Raritan Valley Community College",
-            "url": "https://www.raritanval.edu/",
-            "area": "General Sciences",
-            "studyType": "Associate of Science",
-            "startDate": "2007-09",
-            "endDate": "2011-05",
-            "courses": [
-                "Anatomy and Physiology I",
-                "Anatomy and Physiology II",
-                "Biology I",
-                "Biology II",
-                "Calculus I",
-                "Calculus II",
-                "Chemistry I",
-                "Chemistry II",
-                "Computer Literacy",
-                "English I",
-                "English II",
-                "Human Origins",
-                "Introduction to Cultural Anthropology",
-                "Physics I",
-                "Physics II",
-                "Pre-Calculus I",
-                "Pre-Calculus II",
-                "Summations, Sequences, and Series"
-            ]
         }
     ],
     "skills": [
         {
-            "name": "Technical Writing",
-            "level": "Proficient",
+            "name": "Technical writing",
+            "level": "proficient",
             "keywords": [
                 "HTML",
                 "Markdown",
                 "Jekyll",
-                "Liquid"
+                "Liquid",
+                "SEO",
+                "structured data"
             ]
         },
         {
-            "name": "Software Development",
-            "level": "Proficient",
+            "name": "Software development",
+            "level": "proficient",
             "keywords": [
                 "Go",
                 "Python",
-                "Ruby",
-                "open-source development",
-                "SQL",
+                "RegEx",
                 "GraphQL",
-                "Regular Expressions",
-                "Rust"
+                "SQL",
+                "Ruby",
+                "Rust",
+                "open-source",
+                "git"
+            ]
+        },
+        {
+            "name": "System administration",
+            "level": "proficient",
+            "keywords": [
+                "Netlify",
+                "Algolia",
+                "Datadog",
+                "Appian",
+                "MicroStrategy"
             ]
         },
         {
             "name": "GitHub",
-            "level": "Proficient",
+            "level": "proficient",
             "keywords": [
-                "GitHub GraphQL API",
+                "GraphQL API",
                 "REST API",
-                "GitHub Actions",
-                "GitHub Pages",
-                "Git"
+                "Actions",
+                "Pages"
             ]
         },
         {
-            "name": "Information Architecture",
-            "level": "Intermediate",
+            "name": "Professional development",
+            "level": "intermediate",
+            "keywords": [
+                "public speaking",
+                "training",
+                "mentorship"
+            ]
+        },
+        {
+            "name": "Information architecture",
+            "level": "intermediate",
             "keywords": [
                 "procedural docs",
                 "troubleshooting docs"
@@ -252,7 +275,7 @@
         },
         {
             "name": "Jira",
-            "level": "Intermediate",
+            "level": "intermediate",
             "keywords": [
                 "Jira REST API",
                 "Jira administration"
@@ -260,7 +283,7 @@
         },
         {
             "name": "Web Development",
-            "level": "Intermediate",
+            "level": "intermediate",
             "keywords": [
                 "HTML",
                 "CSS",
