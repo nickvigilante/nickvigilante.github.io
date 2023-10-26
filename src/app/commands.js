@@ -129,6 +129,7 @@ const helpMain = function () {
 Available commands:
 
 `;
+    output += `- resume: View my resume\n`;
     for (let key in resume) {
         output += `- ${key}: ${fieldDescriptions[key]}\n`;
     }

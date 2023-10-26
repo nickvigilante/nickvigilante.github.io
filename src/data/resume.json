@@ -3,7 +3,7 @@
         "name": "Nick Vigilante",
         "label": "Software Engineer/Technical Writer",
         "image": "",
-        "email": "example@example.com",
+        "email": "nt@vigi.email",
         "url": "https://nickvigilante.com",
         "pronouns": "he/him/his",
         "summary": "I like to write docs and code stuff. I have a proven track record of improving docs systems and automating processes. I'm always looking for new opportunities in technical writing and software engineering.",
@@ -90,12 +90,12 @@
             "endDate": "2021-10-27",
             "summary": "Developed full-stack SQL-based compensation management applications in the beqom platform for clients in the financial services industry",
             "highlights": [
-                "Create and modify stored procedures, functions, tables, views, and other database objects to support new business requirements, in addition to making various database customizations",
-                "Work closely with regulatory teams and project management to gather requirements and develop applications and test cases that match expected compensation values",
-                "Create best practices, documentation, and training for end users and other developers",
-                "Provide mentorship and training to new developers on various parts of the beqom platform",
-                "Liaise with vendor product and roadmap teams to communicate product improvements and client issues/pain points",
-                "Operate and develop in both Agile and DevOps methodologies"
+                "Create and modified stored procedures, functions, tables, views, and other database objects to support new business requirements, in addition to making various database customizations",
+                "Worked closely with regulatory teams and project management to gather requirements and develop applications and test cases that match expected compensation values",
+                "Created best practices, documentation, and training for end users and other developers",
+                "Provided mentorship and training to new developers on various parts of the beqom platform",
+                "Liaised with vendor product and roadmap teams to communicate product improvements and client issues/pain points",
+                "Operated and developed in both Agile and DevOps methodologies"
             ]
         },
         {
@@ -122,7 +122,7 @@
             "summary": "Maintained and enhanced the infrastructure surrounding CRL's product documentation",
             "highlights": [
                 "Improved UX and SEO of our documentation site by way of structured data modifications, link standardization, and various enhancements to testing and linting tools",
-                "Created and modify Go code responsible for process automation, data governance of our docs repo, and git commit message compliance",
+                "Created and modify Go and Python code responsible for process automation, data governance of our docs repo, and git commit message compliance",
                 "Reduced toil for managers triaging issues by automatically associating work items with Jira epics",
                 "Delivered frequent internal documentation updates and training seminars to the documentation team to help bolster existing skills and improve their productivity",
                 "Orchestrated enterprise software trials for various hosting platforms to improve site availability and reduce site build times by over 35%",
