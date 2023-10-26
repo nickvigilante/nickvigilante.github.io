@@ -150,7 +150,11 @@ const languages = function() {
 }
 
 const work = function(verbose = false) {
-    let w_hist = resume["work"]
+    let w_hist = resume["work"].sort((a, b) => {
+        const dateA = new Date(a.endDate);
+        const dateB = new Date(b.endDate);
+        return dateB - dateA;
+    });
     let output;
     if (w_hist.length > 0) {
         output = `Work experience:\n\n`;
@@ -181,7 +185,11 @@ const work = function(verbose = false) {
 }
 
 const volunteer = function(verbose = false) {
-    let v_hist = resume["volunteer"]
+    let v_hist = resume["volunteer"].sort((a, b) => {
+        const dateA = new Date(a.endDate);
+        const dateB = new Date(b.endDate);
+        return dateB - dateA;
+    });
     let output;
     if (v_hist.length > 0) {
         output = `Volunteer work:\n\n`;
@@ -212,7 +220,11 @@ const volunteer = function(verbose = false) {
 }
 
 const education = function(verbose = false) {
-    let e_hist = resume["education"]
+    let e_hist = resume["education"].sort((a, b) => {
+        const dateA = new Date(a.endDate);
+        const dateB = new Date(b.endDate);
+        return dateB - dateA;
+    });
     let output;
     if (e_hist.length > 0) {
         output = `Education:\n\n`;
