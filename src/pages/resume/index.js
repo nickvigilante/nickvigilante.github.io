@@ -20,7 +20,8 @@ export default function Home() {
     const mailHref = `mailto:${resume.basics.email}?Subject=You're%20Hired!`;
     const rel = "noreferrer noopener nofollow";
     const pageTitle = `${fullName} - Resume`;
-    const isProduction = process.env.NODE_ENV === 'production';
+    // const isProduction = process.env.NODE_ENV === 'production';
+    const isProduction = false;
 
     const techWriterWork = [6, 5, 4, 2];
     const techWriterWorkHighlights = {
