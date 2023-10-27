@@ -29,12 +29,12 @@
             "endDate": "2014-09-30",
             "summary": "Provider of enterprise-level phone and email support and supplier of knowledge base articles on the MicroStrategy platform",
             "highlights": [
-                "Provide complex and challenging support for MicroStrategy's Business Intelligence product suite and its underlying technologies",
-                "Develop strong relationships with MicroStrategy customers and partners through daily interactions during customer project development and production system maintenance",
-                "Find creative and sophisticated solutions to problems reported while using MicroStrategy's product suite through analytical talent and strong troubleshooting abilities",
-                "Work in a strong team environment to provide unparalleled support to customers in a wide variety of industries",
-                "Prioritize and communicate product defects and enhancements to development teams",
-                "Contribute to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda"
+                "Provided complex and challenging support for MicroStrategy's Business Intelligence product suite and its underlying technologies",
+                "Developed strong relationships with MicroStrategy customers and partners through daily interactions during customer project development and production system maintenance",
+                "Found creative and sophisticated solutions to problems reported while using MicroStrategy's product suite through analytical talent and strong troubleshooting abilities",
+                "Worked in a strong team environment to provide unparalleled support to customers in a wide variety of industries",
+                "Prioritized and communicated product defects and enhancements to development teams",
+                "Contributed to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda"
             ]
         },
         {
@@ -45,9 +45,9 @@
             "endDate": "2015-07-28",
             "summary": "Subject matter expert for technical support engineers and supplier of knowledge base articles on the MicroStrategy platform",
             "highlights": [
-                "Contribute to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda",
-                "Worked as a product expert who can be depended on to solve the most difficult technical cases and defuse critical customer situations",
-                "Used well-developed technical and customer management skills, along with the ability to interact well with the QEs and software developers and involvement with internal Cloud infrastructure to provide support for MicroStrategy's customers",
+                "Contributed to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda",
+                "Worked as a product expert who solved the most difficult technical cases and defused critical customer situations",
+                "Used well-developed technical and customer management skills, along with the ability to interact well with the QEs and software developers and involvement with internal Cloud infrastructure, to provide support for MicroStrategy's customers",
                 "Specialized in database-related issues as well as mobile application-related issues",
                 "Provided training to members of the department to further enhance knowledge of other engineers"
             ]
@@ -60,14 +60,14 @@
             "endDate": "2018-06-15",
             "summary": "Knowledge Base architect, subject matter expert, Appian developer, and cloud infrastructure support engineer",
             "highlights": [
-                "Analyzed customer log data to track trends in usage and identify problems within the platform",
+                "Analyzed customer log data to track trends in usage and identify problems within the Appian platform",
                 "Created and maintained product knowledge base, contributing over 200 articles on product issues, how-to guides, best practices, and troubleshooting common issues",
                 "Submitted updates to the product documentation adhering to the Microsoft style guide",
-                "Administration and development of customer and employee facing systems, including a complete overhaul of product licensing application",
+                "Administered and developed on customer-facing and employee-facing systems, including a complete overhaul of product licensing application",
                 "Collaborated with engineering and cloud teams to share product pain points, high-profile code issues, and product enhancements",
                 "Managed a team of engineers focused on application design and end-user interface concepts",
                 "Provided expert-level assistance and application design recommendations to customers, partners, and fellow employees",
-                "Liaise with premium support customers on a regular basis to offer guidance, preventative maintenance, and strategic suggestions that help maximize the value of the platform"
+                "Liaised with premium support customers on a regular basis to offer guidance, preventative maintenance, and strategic suggestions to maximize the value of the platform"
             ]
         },
         {
@@ -90,10 +90,9 @@
             "endDate": "2021-10-27",
             "summary": "Developed full-stack SQL-based compensation management applications in the beqom platform for clients in the financial services industry",
             "highlights": [
-                "Create and modified stored procedures, functions, tables, views, and other database objects to support new business requirements, in addition to making various database customizations",
-                "Worked closely with regulatory teams and project management to gather requirements and develop applications and test cases that match expected compensation values",
-                "Created best practices, documentation, and training for end users and other developers",
-                "Provided mentorship and training to new developers on various parts of the beqom platform",
+                "Created and modified stored procedures, functions, tables, views, and other database objects to support new business requirements, in addition to making various database customizations, to support SQL-based compensation management applications",
+                "Worked closely with regulatory teams and project management to gather requirements and develop applications and test cases that match expected compensation values from older compensation systems",
+                "Created and delivered both documentation and training for and offered mentorship to end users and fellow employees on various parts of the beqom platform",
                 "Liaised with vendor product and roadmap teams to communicate product improvements and client issues/pain points",
                 "Operated and developed in both Agile and DevOps methodologies"
             ]
@@ -106,8 +105,8 @@
             "endDate": "2022-08",
             "summary": "Wrote documentation for CockroachDB",
             "highlights": [
-                "Created procedural documentation related to migrating data to CockroachDB",
-                "Liaised with various engineering teams about new features and functionality to document about CockroachDB",
+                "Submitted frequent documentation updates to the CockroachDB docs related to database schema and data migrations",
+                "Collaborated with various engineering teams about new features and functionality to document about CockroachDB",
                 "Submitted regular release notes to highlight product changes across releases",
                 "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation",
                 "Enhanced internal tooling and documentation surrounding release note generation to reduce writer toil for generating release notes and improve user experience when reading release notes by combining releases for a single version onto a single page"
@@ -121,12 +120,12 @@
             "endDate": "2023-10-11",
             "summary": "Maintained and enhanced the infrastructure surrounding CRL's product documentation",
             "highlights": [
-                "Improved UX and SEO of our documentation site by way of structured data modifications, link standardization, and various enhancements to testing and linting tools",
-                "Created and modify Go and Python code responsible for process automation, data governance of our docs repo, and git commit message compliance",
+                "Improved UX and SEO of product documentation site by way of structured data modifications, link standardization, and various enhancements to testing and linting tools",
+                "Created and modified Go and Python code responsible for process and content automation, data governance of docs repo, and git commit message compliance",
                 "Reduced toil for managers triaging issues by automatically associating work items with Jira epics",
                 "Delivered frequent internal documentation updates and training seminars to the documentation team to help bolster existing skills and improve their productivity",
                 "Orchestrated enterprise software trials for various hosting platforms to improve site availability and reduce site build times by over 35%",
-                "Improved search experience to bring end users to their desired content quicker and more reliably through Algolia",
+                "Improved search experience by bringing end users to their desired content quicker and more reliably through Algolia",
                 "Provided tooling assistance to writers to ensure a frictionless contribution experience",
                 "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation"
             ]
@@ -135,7 +134,7 @@
     "volunteer": [
         {
             "organization": "Cockroach Labs",
-            "position": "Co-Chair, Roacher Pride",
+            "position": "Co-Chair of Roacher Pride",
             "url": "https://www.cockroachlabs.com/blog/roacherpride-how-we-celebrate-pride-year-round-at-cockroach-labs/",
             "startDate": "2022-08-01",
             "endDate": "2023-10-11",
@@ -155,6 +154,7 @@
             "studyType": "Associate of Science",
             "startDate": "2007-09",
             "endDate": "2011-05",
+            "honors": "completed during high school",
             "courses": [
                 "Anatomy and Physiology I",
                 "Anatomy and Physiology II",
@@ -239,6 +239,8 @@
             "name": "System administration",
             "level": "proficient",
             "keywords": [
+                "Linux",
+                "command line operations",
                 "Netlify",
                 "Algolia",
                 "Datadog",
