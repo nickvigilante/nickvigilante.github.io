@@ -1,7 +1,6 @@
 @page {
     margin: 50px;
 }
-
 .body {
     font-family: monospace;
     font-size: 10px;
@@ -34,15 +33,26 @@
 }
 .subtext {
     margin: 0px 0px 0px 38.5px;
-    /* width: 575px; */
 }
 .doublesubtext {
-    margin: 0px 0px 0px 59.5px;
-    /* width: 525px; */
+    margin: 0px 0px 0px 60.5px;
+}
+.doublesubtext_bullet {
+    margin: 0px 0px 0px 71.5px;
+    text-indent: -11px;
+}
+.doublesubtext_bullet::before {
+    content: "* ";
 }
 .triplesubtext {
-    margin: 0px 0px 0px 80.5px;
-    /* width: 475px; */
+    margin: 0px 0px 0px 82.5px;
+}
+.triplesubtext_bullet {
+    margin: 0px 0px 0px 93.5px;
+    text-indent: -11px;
+}
+.triplesubtext_bullet::before {
+    content: "- ";
 }
 .bottomcut {
     margin-bottom: 0px;
@@ -65,4 +75,8 @@
 }
 .authortext {
     margin: 0px;
+}
+
+.authortext:not(:first-of-type)::before {
+    content: "\00a0|| ";
 }

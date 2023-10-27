@@ -27,13 +27,13 @@ export default function Home() {
         6: [0, 1, 3, 4, 6],
         5: [0, 1, 2, 3, 4],
         4: [0, 2],
-        2: [1, 2, 4]
+        2: [1, 2, 4, 5]
     };
     const techWriterSkills = [0, 1, 2, 3, 4, 5, 7];
     const techWriterSkillsKeywords = {
         0: [0, 1, 2, 3, 4, 5],
         1: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-        2: [0, 1, 2],
+        2: [0, 1, 2, 3, 4],
         3: [0, 1, 2, 3],
         4: [0, 1, 2],
         5: [0, 1],
@@ -44,15 +44,15 @@ export default function Home() {
     const softwareEngineerWork = [6, 5, 4, 2];
     const softwareEngineerWorkHighlights = {
         6: [1, 0, 2, 3, 4, 6],
-        5: [4, 1, 2],
-        4: [0, 1, 3],
+        5: [0, 4, 1, 2],
+        4: [0, 1, 2],
         2: [3, 4, 5]
     };
     const softwareEngineerSkills = [1, 2, 3, 0,  7, 4, 5];
     const softwareEngineerSkillsKeywords = {
         0: [0, 1, 2, 3, 4, 5],
         1: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-        2: [0, 1, 2],
+        2: [0, 1, 2, 3, 4],
         3: [0, 1, 2, 3],
         4: [0, 1, 2],
         5: [0, 1],
@@ -93,10 +93,10 @@ export default function Home() {
                 <p className={styles.subtext}><b>work</b></p>
                 {work.map((val, idx) => (
                     <div key={idx}>
-                        <p className={styles.doublesubtext}>* {resume.work[val].position}, <a className={styles.link} href={resume.work[val].url} target='_blank' rel={rel}>{resume.work[val].name}</a> ({getMonthAndYear(resume.work[val].startDate)} - {getMonthAndYear(resume.work[val].endDate)})</p>
+                        <p className={styles.doublesubtext_bullet}>{resume.work[val].position}, <a className={styles.link} href={resume.work[val].url} target='_blank' rel={rel}>{resume.work[val].name}</a> ({getMonthAndYear(resume.work[val].startDate)} - {getMonthAndYear(resume.work[val].endDate)})</p>
                         <p className={styles.triplesubtext}>{resume.work[val].summary}. Highlights:</p>
                         {workHighlights[val].map((val2, idx2) => (
-                            <p key={idx2} className={styles.triplesubtext}>- {resume.work[val].highlights[val2]}</p>
+                            <p key={idx2} className={styles.triplesubtext_bullet}>{resume.work[val].highlights[val2]}</p>
                         ))}
                         <br/>
                     </div>
@@ -105,14 +105,14 @@ export default function Home() {
                 <p className={styles.subtext}><b>skills</b></p>
                 {skills.map((i, idx) => (
                     <div key={idx}>
-                        <p className={styles.doublesubtext}>* {resume.skills[i].name} ({resume.skills[i].level}) - {skillsKeywords[i].map((x => resume.skills[i].keywords[x])).join(", ")} </p>
+                        <p className={styles.doublesubtext_bullet}>{resume.skills[i].name} ({resume.skills[i].level}) - {skillsKeywords[i].map((x => resume.skills[i].keywords[x])).join(", ")} </p>
                     </div>
                 ))}
                 <br/>
                 <p className={styles.subtext}><b>volunteer</b></p>
                 {sortDate(resume.volunteer).map((item, idx) => (
                     <div key={idx}>
-                        <p className={styles.doublesubtext}>* {item.position}, <a className={styles.link} href={item.url} target='_blank' rel={rel}>{item.organization}</a>  ({getMonthAndYear(item.startDate)} - {getMonthAndYear(item.endDate)})</p>
+                        <p className={styles.doublesubtext_bullet}>{item.position}, <a className={styles.link} href={item.url} target='_blank' rel={rel}>{item.organization}</a>  ({getMonthAndYear(item.startDate)} - {getMonthAndYear(item.endDate)})</p>
                         <p className={styles.triplesubtext}>{item.summary}</p>
                     </div>
                     
@@ -121,7 +121,7 @@ export default function Home() {
                 <p className={styles.subtext}><b>education</b></p>
                 {sortDate(resume.education).map((item, idx) => (
                     <div key={idx}>
-                        <p className={styles.doublesubtext}>* <a className={styles.link} href={item.url} target='_blank' rel={rel}>{item.institution}</a>: {item.studyType}, {item.area}</p>
+                        <p className={styles.doublesubtext_bullet}>{item.studyType}, {item.area}, <a className={styles.link} href={item.url} target='_blank' rel={rel}>{item.institution}</a></p>
                         <p className={styles.triplesubtext}>{getMonthAndYear(item.startDate)} - {getMonthAndYear(item.endDate)}{item.score !== undefined ? `, GPA ${item.score}` : ''}{item.honors !== undefined ? `, ${item.honors}` : ''}</p>
                     </div>  
                 ))}
@@ -134,7 +134,7 @@ export default function Home() {
                 <div className={styles.authorcontainer}>
                     <p className={styles.authortext}>E-mail: {isProduction ? (<a className={styles.link} href="">REDACTED</a>) : (<a className={styles.link} href={mailHref}>{resume.basics.email}</a>)} </p>
                     {resume.basics.profiles.map((item, idx) => (
-                        <p key={idx} className={styles.authortext}>&nbsp;|| {item.network}: <a className={styles.link} href={item.url} target='_blank' rel={rel}>{item.username}</a></p>
+                        <p key={idx} className={styles.authortext}>{item.network}: <a className={styles.link} href={item.url} target='_blank' rel={rel}>{item.username}</a></p>
                     ))}
                 </div>
             </div>
