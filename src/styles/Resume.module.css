@@ -1,82 +1,89 @@
 @page {
-    margin: 50px;
+  margin: 50px;
 }
 .body {
-    font-family: monospace;
-    font-size: 10px;
-    color: #222222;
-    margin: 0px 10px 0px 0px;
-    text-align: left;
-    max-width: 725px;
+  font-family: monospace;
+  font-size: 10px;
+  color: #222222;
+  margin: 0px 10px 0px 0px;
+  text-align: left;
+  max-width: 725px;
 }
 .headercontainer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .manheader_left {
-    font-family: monospace;
-    font-size: 10px;
-    margin: 0px;
-    text-align: left;
+  font-family: monospace;
+  font-size: 10px;
+  margin: 0px;
+  text-align: left;
 }
 .manheader_right {
-    font-family: monospace;
-    font-size: 10px;
-    margin: 0px;
-    text-align: right;
+  font-family: monospace;
+  font-size: 10px;
+  margin: 0px;
+  text-align: right;
 }
 .header {
-    font-size: 10px;
-    font-weight: bold;
-    margin: 15px 0px 0px 0px;
-    line-height: .8em;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 15px 0px 0px 0px;
+  line-height: 0.8em;
 }
 .subtext {
-    margin: 0px 0px 0px 38.5px;
+  margin: 0px 0px 0px 38.5px;
 }
 .doublesubtext {
-    margin: 0px 0px 0px 60.5px;
+  margin: 0px 0px 0px 60.5px;
 }
 .doublesubtext_bullet {
-    margin: 0px 0px 0px 71.5px;
-    text-indent: -11px;
+  margin: 0px 0px 0px 71.5px;
+  text-indent: -11px;
 }
 .doublesubtext_bullet::before {
-    content: "* ";
+  content: "• ";
 }
 .triplesubtext {
-    margin: 0px 0px 0px 82.5px;
+  margin: 0px 0px 0px 82.5px;
 }
 .triplesubtext_bullet {
-    margin: 0px 0px 0px 93.5px;
-    text-indent: -11px;
+  margin: 0px 0px 0px 93.5px;
+  text-indent: -11px;
 }
 .triplesubtext_bullet::before {
-    content: "- ";
+  content: "- ";
 }
 .bottomcut {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .link {
-    color: #222222;
-    text-decoration: underline;
+  color: #222222;
+  text-decoration: underline;
 }
 .footer {
-    margin: 10px 0px 0px 0px;
-    color: #CCCCCC;
+  margin: 10px 0px 0px 0px;
+  color: #cccccc;
 }
 .table {
-    border-spacing: 2em 0em;
-    margin: 0px 90px;
+  border-spacing: 2em 0em;
+  margin: 0px 90px;
 }
 .authorcontainer {
-    display: flex;
-    margin: 0px 0px 0px 38.5px;
+  display: flex;
+  margin: 0px 0px 0px 38.5px;
 }
 .authortext {
-    margin: 0px;
+  margin: 0px;
 }
 
 .authortext:not(:first-of-type)::before {
-    content: "\00a0|| ";
+  content: "\00a0|| ";
+}
+
+.hiddenATS {
+  font-size: 0;
+  color: transparent;
+  height: 0;
+  overflow: hidden;
 }

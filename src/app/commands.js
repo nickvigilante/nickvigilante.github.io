@@ -325,6 +325,9 @@ welcome
 `
 
 export function getMonthAndYear(dateString) {
+    if (dateString == "Present") {
+        return dateString
+    }
     const isYearMonthFormat = /^\d{4}-\d{2}$/.test(dateString);
     if (isYearMonthFormat) {
         dateString += '-01';

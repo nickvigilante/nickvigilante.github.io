@@ -1,330 +1,349 @@
 {
-    "basics": {
-        "name": "Nick Vigilante",
-        "label": "Software Engineer/Technical Writer",
-        "image": "",
-        "email": "nt@vigi.email",
-        "url": "https://nickvigilante.com",
-        "pronouns": "he/him/his",
-        "summary": "I like to write docs and code stuff. I have a proven track record of improving docs systems and automating processes. I'm always looking for new opportunities in technical writing and software engineering.",
-        "profiles": [
-            {
-                "network": "GitHub",
-                "username": "nickvigilante",
-                "url": "https://github.com/nickvigilante"
-            },
-            {
-                "network": "LinkedIn",
-                "username": "n-i-c-k-v",
-                "url": "https://linkedin.com/in/n-i-c-k-v/"
-            }
-        ]
-    },
-    "work": [
-        {
-            "name": "MicroStrategy, Inc",
-            "position": "Technical Support Engineer",
-            "url": "https://www.microstrategy.com",
-            "startDate": "2013-06",
-            "endDate": "2014-09-30",
-            "summary": "Provider of enterprise-level phone and email support and supplier of knowledge base articles on the MicroStrategy platform",
-            "highlights": [
-                "Provided complex and challenging support for MicroStrategy's Business Intelligence product suite and its underlying technologies",
-                "Developed strong relationships with MicroStrategy customers and partners through daily interactions during customer project development and production system maintenance",
-                "Found creative and sophisticated solutions to problems reported while using MicroStrategy's product suite through analytical talent and strong troubleshooting abilities",
-                "Worked in a strong team environment to provide unparalleled support to customers in a wide variety of industries",
-                "Prioritized and communicated product defects and enhancements to development teams",
-                "Contributed to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda"
-            ]
-        },
-        {
-            "name": "MicroStrategy, Inc",
-            "position": "Product Support Manager",
-            "url": "https://www.microstrategy.com",
-            "startDate": "2014-10-01",
-            "endDate": "2015-07-28",
-            "summary": "Subject matter expert for technical support engineers and supplier of knowledge base articles on the MicroStrategy platform",
-            "highlights": [
-                "Contributed to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda",
-                "Worked as a product expert who solved the most difficult technical cases and defused critical customer situations",
-                "Used well-developed technical and customer management skills, along with the ability to interact well with the QEs and software developers and involvement with internal Cloud infrastructure, to provide support for MicroStrategy's customers",
-                "Specialized in database-related issues as well as mobile application-related issues",
-                "Provided training to members of the department to further enhance knowledge of other engineers"
-            ]
-        },
-        {
-            "name": "Appian Corporation",
-            "position": "Senior Solution Engineer",
-            "url": "https://www.appian.com",
-            "startDate": "2015-08-02",
-            "endDate": "2018-06-15",
-            "summary": "Knowledge Base architect, subject matter expert, Appian developer, and cloud infrastructure support engineer",
-            "highlights": [
-                "Analyzed customer log data to track trends in usage and identify problems within the Appian platform",
-                "Created and maintained product knowledge base, contributing over 200 articles on product issues, how-to guides, best practices, and troubleshooting common issues",
-                "Submitted updates to the product documentation adhering to the Microsoft style guide",
-                "Administered and developed on customer-facing and employee-facing systems, including a complete overhaul of product licensing application",
-                "Collaborated with engineering and cloud teams to share product pain points, high-profile code issues, and product enhancements",
-                "Managed a team of engineers focused on application design and end-user interface concepts",
-                "Provided expert-level assistance and application design recommendations to customers, partners, and fellow employees",
-                "Liaised with premium support customers on a regular basis to offer guidance, preventative maintenance, and strategic suggestions to maximize the value of the platform"
-            ]
-        },
-        {
-            "name": "AFAK Solutions, LLC",
-            "position": "Independent Contractor",
-            "url": "https://www.cockroachlabs.com",
-            "startDate": "2018-06-18",
-            "endDate": "2019-02-15",
-            "summary": "A little bit of everything",
-            "highlights": [
-                "Provided hardware and software infrastructure support for and upgrades to existing systems",
-                "Performed content structural review and enhancements of existing slide decks and course material for professional development training"
-            ]
-        },
-        {
-            "name": "TCT, Inc",
-            "position": "Senior SQL Developer",
-            "url": "https://www.tctis.com",
-            "startDate": "2019-02-19",
-            "endDate": "2021-10-27",
-            "summary": "Developed full-stack SQL-based compensation management applications in the beqom platform for clients in the financial services industry",
-            "highlights": [
-                "Created and modified stored procedures, functions, tables, views, and other database objects to support new business requirements, in addition to making various database customizations, to support SQL-based compensation management applications",
-                "Worked closely with regulatory teams and project management to gather requirements and develop applications and test cases that match expected compensation values from older compensation systems",
-                "Created and delivered both documentation and training for and offered mentorship to end users and fellow employees on various parts of the beqom platform",
-                "Liaised with vendor product and roadmap teams to communicate product improvements and client issues/pain points",
-                "Operated and developed in both Agile and DevOps methodologies"
-            ]
-        },
-        {
-            "name": "Cockroach Labs",
-            "position": "Technical Writer",
-            "url": "https://www.cockroachlabs.com",
-            "startDate": "2021-11-29",
-            "endDate": "2022-08",
-            "summary": "Wrote documentation for CockroachDB",
-            "highlights": [
-                "Submitted frequent documentation updates to the CockroachDB docs related to database schema and data migrations",
-                "Collaborated with various engineering teams about new features and functionality to document about CockroachDB",
-                "Submitted regular release notes to highlight product changes across releases",
-                "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation",
-                "Enhanced internal tooling and documentation surrounding release note generation to reduce writer toil for generating release notes and improve user experience when reading release notes by combining releases for a single version onto a single page"
-            ]
-        },
-        {
-            "name": "Cockroach Labs",
-            "position": "Software Engineer/Documentation Infrastructure Architect",
-            "url": "https://www.cockroachlabs.com",
-            "startDate": "2022-08",
-            "endDate": "2023-10-11",
-            "summary": "Maintained and enhanced the infrastructure surrounding CRL's product documentation",
-            "highlights": [
-                "Improved UX and SEO of product documentation site by way of structured data modifications, link standardization, and various enhancements to testing and linting tools",
-                "Created and modified Go and Python code responsible for process and content automation, data governance of docs repo, and git commit message compliance",
-                "Reduced toil for managers triaging issues by automatically associating work items with Jira epics",
-                "Delivered frequent internal documentation updates and training seminars to the documentation team to help bolster existing skills and improve their productivity",
-                "Orchestrated enterprise software trials for various hosting platforms to improve site availability and reduce site build times by over 35%",
-                "Improved search experience by bringing end users to their desired content quicker and more reliably through Algolia",
-                "Provided tooling assistance to writers to ensure a frictionless contribution experience",
-                "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation"
-            ]
-        }
-    ],
-    "volunteer": [
-        {
-            "organization": "Cockroach Labs",
-            "position": "Co-Chair of Roacher Pride",
-            "url": "https://www.cockroachlabs.com/blog/roacherpride-how-we-celebrate-pride-year-round-at-cockroach-labs/",
-            "startDate": "2022-08-01",
-            "endDate": "2023-10-11",
-            "summary": "Co-chair of the LGBTQIA+ employee resource group dedicated to helping employees with LGBTQIA+ friends and loved ones as well as LGBTQIA+ employees",
-            "highlights": [
-                "Hosted virtual and in-person company-wide happy hours",
-                "Co-hosted a volunteer event to pack snack packs; donated said snack packs to the Ali Forney Center in NYC to benefit LGBTQIA+ youth experiencing food insecurity",
-                "Oversaw a committee of volunteers who contributed blog posts, created company swag, and led various events for the company"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Raritan Valley Community College",
-            "url": "https://www.raritanval.edu/",
-            "area": "General Sciences",
-            "studyType": "Associate of Science",
-            "startDate": "2007-09",
-            "endDate": "2011-05",
-            "honors": "completed during high school",
-            "courses": [
-                "Anatomy and Physiology I",
-                "Anatomy and Physiology II",
-                "Biology I",
-                "Biology II",
-                "Calculus I",
-                "Calculus II",
-                "Chemistry I",
-                "Chemistry II",
-                "Computer Literacy",
-                "English I",
-                "English II",
-                "Human Origins",
-                "Introduction to Cultural Anthropology",
-                "Physics I",
-                "Physics II",
-                "Pre-Calculus I",
-                "Pre-Calculus II",
-                "Summations, Sequences, and Series"
-            ]
-        },
-        {
-            "institution": "Rensselaer Polytechnic Institute",
-            "url": "https://rpi.edu/",
-            "area": "Mathematics of Operations Research",
-            "studyType": "Bachelor of Science",
-            "startDate": "2011-08-29",
-            "endDate": "2013-05-25",
-            "score": "3.74",
-            "honors": "Magna Cum Laude",
-            "courses": [
-                "Advanced Calculus",
-                "Art and Science of Mathematics I",
-                "Computational Optimization",
-                "Computer Science I",
-                "Foundations of Analysis",
-                "General Psychology",
-                "Human Factors in Design",
-                "Human Sexuality",
-                "Introduction to Complex Variables",
-                "Introduction to Differential Equations",
-                "Industrial and Organizational Psychology",
-                "Linear Algebra",
-                "Math Mentorship",
-                "Mathematical Models of Operations Research",
-                "Multivariable Calculus and Matrix Algebra",
-                "Physics I",
-                "Probability Theory and Applications",
-                "Social Psychology"
-            ]
-        }
-    ],
-    "skills": [
-        {
-            "name": "Technical writing",
-            "level": "proficient",
-            "keywords": [
-                "HTML",
-                "Markdown",
-                "Jekyll",
-                "Liquid",
-                "SEO",
-                "structured data"
-            ]
-        },
-        {
-            "name": "Software development",
-            "level": "proficient",
-            "keywords": [
-                "Go",
-                "Python",
-                "RegEx",
-                "GraphQL",
-                "SQL",
-                "Ruby",
-                "Rust",
-                "open-source",
-                "git"
-            ]
-        },
-        {
-            "name": "System administration",
-            "level": "proficient",
-            "keywords": [
-                "Linux",
-                "command line operations",
-                "Netlify",
-                "Algolia",
-                "Datadog",
-                "Appian",
-                "MicroStrategy"
-            ]
-        },
-        {
-            "name": "GitHub",
-            "level": "proficient",
-            "keywords": [
-                "GraphQL API",
-                "REST API",
-                "Actions",
-                "Pages"
-            ]
-        },
-        {
-            "name": "Professional development",
-            "level": "intermediate",
-            "keywords": [
-                "public speaking",
-                "training",
-                "mentorship"
-            ]
-        },
-        {
-            "name": "Information architecture",
-            "level": "intermediate",
-            "keywords": [
-                "procedural docs",
-                "troubleshooting docs"
-            ]
-        },
-        {
-            "name": "Jira",
-            "level": "intermediate",
-            "keywords": [
-                "Jira REST API",
-                "Jira administration"
-            ]
-        },
-        {
-            "name": "Web Development",
-            "level": "intermediate",
-            "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "TypeScript",
-                "React",
-                "Next.js"
-            ]
-        }
-    ],
-    "languages": [
-        {
-            "language": "English",
-            "fluency": "Native proficiency"
-        },
-        {
-            "language": "Spanish",
-            "fluency": "Limited working proficiency"
-        },
-        {
-            "language": "Italian",
-            "fluency": "Elementary proficiency"
-        }
-    ],
-    "interests": [
-        {
-            "name": "PC building"
-        },
-        {
-            "name": "Home automation"
-        },
-        {
-            "name": "Cooking"
-        },
-        {
-            "name": "Traveling"
-        },
-        {
-            "name": "Open-source software"
-        }
+  "basics": {
+    "name": "Nick Vigilante",
+    "label": "Documentation Architect/Software Engineer",
+    "image": "",
+    "email": "nt@vigi.email",
+    "url": "https://nickvigilante.com",
+    "pronouns": "he/him/his",
+    "location": "Rye, NY 10580",
+    "summary": "I like to write docs and code stuff. I have a proven track record of improving docs systems and automating processes. I'm always looking for new opportunities to learn new skills in technical writing and software engineering.",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "nickvigilante",
+        "url": "https://github.com/nickvigilante"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "n-i-c-k-v",
+        "url": "https://linkedin.com/in/n-i-c-k-v/"
+      }
     ]
+  },
+  "work": [
+    {
+      "name": "MicroStrategy, Inc",
+      "position": "Technical Support Engineer",
+      "url": "https://www.microstrategy.com",
+      "startDate": "2013-06",
+      "endDate": "2014-09-30",
+      "summary": "Provider of enterprise-level phone and email support and supplier of knowledge base articles on the MicroStrategy platform",
+      "highlights": [
+        "Provided complex and challenging support for MicroStrategy's Business Intelligence product suite and its underlying technologies",
+        "Developed strong relationships with MicroStrategy customers and partners through daily interactions during customer project development and production system maintenance",
+        "Found creative and sophisticated solutions to problems reported while using MicroStrategy's product suite through analytical talent and strong troubleshooting abilities",
+        "Worked in a strong team environment to provide unparalleled support to customers in a wide variety of industries",
+        "Prioritized and communicated product defects and enhancements to development teams",
+        "Contributed to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda"
+      ]
+    },
+    {
+      "name": "MicroStrategy, Inc",
+      "position": "Product Support Manager",
+      "url": "https://www.microstrategy.com",
+      "startDate": "2014-10-01",
+      "endDate": "2015-07-28",
+      "summary": "Subject matter expert for technical support engineers and supplier of knowledge base articles on the MicroStrategy platform",
+      "highlights": [
+        "Contributed to research and growth of the MicroStrategy Knowledge Base by creating customer-facing documentation of all technical solutions and product documentation addenda",
+        "Worked as a product expert who solved the most difficult technical cases and defused critical customer situations",
+        "Used well-developed technical and customer management skills, along with the ability to interact well with the QEs and software developers and involvement with internal Cloud infrastructure, to provide support for MicroStrategy's customers",
+        "Specialized in database-related issues as well as mobile application-related issues",
+        "Provided training to members of the department to further enhance knowledge of other engineers"
+      ]
+    },
+    {
+      "name": "Appian Corporation",
+      "position": "Senior Solution Engineer",
+      "url": "https://www.appian.com",
+      "startDate": "2015-08-02",
+      "endDate": "2018-06-15",
+      "summary": "Knowledge Base architect, subject matter expert, Appian developer, and cloud infrastructure support engineer",
+      "highlights": [
+        "Analyzed customer log data to track trends in usage and identify problems within the Appian platform",
+        "Created and maintained product knowledge base, contributing over 200 articles on product issues, how-to guides, best practices, and troubleshooting common issues",
+        "Submitted updates to the product documentation adhering to the Microsoft style guide",
+        "Administered and developed on customer-facing and employee-facing systems, including a complete overhaul of product licensing application",
+        "Collaborated with engineering and cloud teams to share product pain points, high-profile code issues, and product enhancements",
+        "Managed a team of engineers focused on application design and end-user interface concepts",
+        "Provided expert-level assistance and application design recommendations to customers, partners, and fellow employees",
+        "Liaised with premium support customers on a regular basis to offer guidance, preventative maintenance, and strategic suggestions to maximize the value of the platform"
+      ]
+    },
+    {
+      "name": "AFAK Solutions, LLC",
+      "position": "Independent Contractor",
+      "url": "https://www.cockroachlabs.com",
+      "startDate": "2018-06-18",
+      "endDate": "2019-02-15",
+      "summary": "A little bit of everything",
+      "highlights": [
+        "Provided hardware and software infrastructure support for and upgrades to existing systems",
+        "Performed content structural review and enhancements of existing slide decks and course material for professional development training"
+      ]
+    },
+    {
+      "name": "TCT, Inc",
+      "position": "Senior SQL Developer",
+      "url": "https://www.tctis.com",
+      "startDate": "2019-02-19",
+      "endDate": "2021-10-27",
+      "summary": "Developed full-stack SQL-based compensation management applications in the beqom platform for clients in the financial services industry",
+      "highlights": [
+        "Created and modified stored procedures, functions, tables, views, and other database objects to support new business requirements, in addition to making various database customizations, to support SQL-based compensation management applications",
+        "Worked closely with regulatory teams and project management to gather requirements and develop applications and test cases that match expected compensation values from older compensation systems",
+        "Created and delivered both documentation and training for and offered mentorship to end users and fellow employees on various parts of the beqom platform",
+        "Liaised with vendor product and roadmap teams to communicate product improvements and client issues/pain points",
+        "Operated and developed in both Agile and DevOps methodologies"
+      ]
+    },
+    {
+      "name": "Cockroach Labs",
+      "position": "Technical Writer",
+      "url": "https://www.cockroachlabs.com",
+      "startDate": "2021-11-29",
+      "endDate": "2022-08",
+      "summary": "Wrote documentation for CockroachDB",
+      "highlights": [
+        "Wrote and maintained CockroachDB documentation, collaborating with engineering teams to document new features, schema updates, and data migrations",
+        "Submitted regular release notes to highlight product changes across releases",
+        "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation",
+        "Enhanced internal tooling and documentation surrounding release note generation to reduce writer toil for generating release notes and improve user experience when reading release notes by combining releases for a single version onto a single page"
+      ]
+    },
+    {
+      "name": "Cockroach Labs",
+      "position": "Software Engineer/Documentation Infrastructure Architect",
+      "url": "https://www.cockroachlabs.com",
+      "startDate": "2022-08",
+      "endDate": "2023-10-11",
+      "summary": "Maintained and enhanced the infrastructure surrounding CRL's product documentation",
+      "highlights": [
+        "Improved UX and SEO of product documentation site by way of structured data modifications, link standardization, and various enhancements to testing and linting tools",
+        "Created and modified Go and Python code responsible for process and content automation, data governance of docs repo, and git commit message compliance",
+        "Reduced toil for managers triaging issues by automatically associating work items with Jira epics",
+        "Delivered frequent internal documentation updates and training seminars to the documentation team to help bolster existing skills and improve their productivity",
+        "Orchestrated enterprise software trials for various hosting platforms to improve site availability and reduce site build times by over 35%",
+        "Improved search experience by bringing end users to their desired content quicker and more reliably through Algolia",
+        "Provided tooling assistance to writers to ensure a frictionless contribution experience",
+        "Reviewed Jira, Slack, and other data sources to drive improvements to the documentation"
+      ]
+    },
+    {
+      "name": "TileDB, Inc.",
+      "position": "Senior Technical Writer",
+      "url": "https://tiledb.com",
+      "startDate": "2023-12-18",
+      "endDate": "Present",
+      "summary": "Sole technical writer managing TileDB's documentation, including strategy, governance, and infrastructure",
+      "highlights": [
+        "Led the complete rebuild of TileDB's documentation, culminating in TileDB Academy, a comprehensive educational resource",
+        "Developed tutorials, foundational content, and reference materials for the TileDB commercial platform and its subproducts, improving user adoption and onboarding",
+        "Collaborated with engineers and product managers to strategically plan and publish new technical content, ensuring alignment with product development",
+        "Established and enforced an exhaustive style guide based on industry standards from Microsoft, Google, and Red Hat, standardizing documentation quality",
+        "Led cross-functional documentation initiatives, aligning content strategy with Engineering, Sales, and Marketing, resulting in improved documentation accessibility and internal efficiency",
+        "Designed and implemented a suite of code and style linters, including Vale, Ruff, ESLint, and Prettier, along with custom Python-based fixers, ensuring high-quality, consistent documentation and code",
+        "Conducted company-wide training sessions on the documentation contribution process, best practices, and style standards, improving internal documentation quality and consistency",
+        "Contributed directly to TileDB's open-source APIs, enhancing documentation and code accuracy through hands-on development",
+        "Performed regular QA testing of TileDB's API clients, reporting bugs and feature requests to Engineering to improve product stability and user experience"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Cockroach Labs",
+      "position": "Co-Chair of Roacher Pride",
+      "url": "https://www.cockroachlabs.com/blog/roacherpride-how-we-celebrate-pride-year-round-at-cockroach-labs/",
+      "startDate": "2022-08-01",
+      "endDate": "2023-10-11",
+      "summary": "Co-chair of the LGBTQIA+ employee resource group dedicated to helping employees with LGBTQIA+ friends and loved ones as well as LGBTQIA+ employees",
+      "summaryShort": "Led LGBTQIA+ employee resource group",
+      "highlights": [
+        "Hosted virtual and in-person company-wide happy hours",
+        "Co-hosted a volunteer event to pack snack packs; donated said snack packs to the Ali Forney Center in NYC to benefit LGBTQIA+ youth experiencing food insecurity",
+        "Oversaw a committee of volunteers who contributed blog posts, created company swag, and led various events for the company"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Raritan Valley Community College",
+      "url": "https://www.raritanval.edu/",
+      "area": "General Sciences",
+      "studyType": "Associate of Science",
+      "studyTypeShort": "A.S.",
+      "startDate": "2007-09",
+      "endDate": "2011-05",
+      "honors": "completed during high school",
+      "courses": [
+        "Anatomy and Physiology I",
+        "Anatomy and Physiology II",
+        "Biology I",
+        "Biology II",
+        "Calculus I",
+        "Calculus II",
+        "Chemistry I",
+        "Chemistry II",
+        "Computer Literacy",
+        "English I",
+        "English II",
+        "Human Origins",
+        "Introduction to Cultural Anthropology",
+        "Physics I",
+        "Physics II",
+        "Pre-Calculus I",
+        "Pre-Calculus II",
+        "Summations, Sequences, and Series"
+      ]
+    },
+    {
+      "institution": "Rensselaer Polytechnic Institute",
+      "url": "https://rpi.edu/",
+      "area": "Mathematics of Operations Research",
+      "studyType": "Bachelor of Science",
+      "studyTypeShort": "B.S.",
+      "startDate": "2011-08-29",
+      "endDate": "2013-05-25",
+      "score": "3.74",
+      "honors": "Magna Cum Laude",
+      "courses": [
+        "Advanced Calculus",
+        "Art and Science of Mathematics I",
+        "Computational Optimization",
+        "Computer Science I",
+        "Foundations of Analysis",
+        "General Psychology",
+        "Human Factors in Design",
+        "Human Sexuality",
+        "Introduction to Complex Variables",
+        "Introduction to Differential Equations",
+        "Industrial and Organizational Psychology",
+        "Linear Algebra",
+        "Math Mentorship",
+        "Mathematical Models of Operations Research",
+        "Multivariable Calculus and Matrix Algebra",
+        "Physics I",
+        "Probability Theory and Applications",
+        "Social Psychology"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Technical writing",
+      "level": "■■■■■",
+      "keywords": [
+        "HTML",
+        "Markdown",
+        "Quarto",
+        "Jekyll",
+        "Liquid",
+        "SEO",
+        "structured data"
+      ]
+    },
+    {
+      "name": "Soft skills",
+      "level": "■■■■■",
+      "keywords": [
+        "communication",
+        "leadership",
+        "training",
+        "mentorship",
+        "time management"
+      ]
+    },
+    {
+      "name": "Information architecture",
+      "level": "■■■■□",
+      "keywords": [
+        "Diátaxis framework",
+        "procedural docs",
+        "troubleshooting docs",
+        "tutorials"
+      ]
+    },
+    {
+      "name": "Software development",
+      "level": "■■■■□",
+      "keywords": [
+        "Rust",
+        "Python",
+        "R",
+        "Bash",
+        "Jupyter",
+        "Go",
+        "SQL",
+        "GraphQL",
+        "RegEx",
+        "Ruby",
+        "open-source",
+        "git"
+      ]
+    },
+    {
+      "name": "Infrastructure & Web",
+      "level": "■■■■□",
+      "keywords": [
+        "Linux",
+        "command line operations",
+        "Netlify",
+        "Algolia",
+        "GitHub",
+        "CI",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Jira",
+      "level": "■■■□□",
+      "keywords": ["Jira REST API", "Jira administration"]
+    },
+    {
+      "name": "Web Development",
+      "level": "■■■□□",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native proficiency"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Limited working proficiency"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Elementary proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "PC building"
+    },
+    {
+      "name": "Home automation"
+    },
+    {
+      "name": "Cooking"
+    },
+    {
+      "name": "Traveling"
+    },
+    {
+      "name": "Open-source software"
+    }
+  ]
 }
